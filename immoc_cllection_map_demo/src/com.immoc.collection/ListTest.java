@@ -1,9 +1,13 @@
 package com.immoc.collection;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+创建类
+ */
 public class ListTest {
     //创建一个List类型的参数， 备选课程
     public List courseToSelect;
