@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -18,7 +19,7 @@ public class ListTest {
     //创建课程添加到备选课程
     public void TestAdd(){
         //创建课程实例
-        Course cr1 = new Course("1","数学");
+        Course cr1 = new Course("2","大学英语");
         Course cr2 = new Course("2","英文");
         //list方法到备选课程序列中
         courseToSelect.add(cr1);
@@ -55,9 +56,50 @@ public class ListTest {
             System.out.println(""+cr.id+"."+cr.name);
         }
     }
+    /*
+    通过迭代器遍历访问list中的数据
+     */
+    public void testIterator(){
+        Iterator it = courseToSelect.iterator();
+        System.out.println("使用迭代器遍历");
+        while(it.hasNext()){
+             Course cr= (Course) it.next();
+            System.out.println(cr.id+"."+cr.name);
+        }
+    }
+    /*
+    使用 fo each 进行集合的遍历访问
+     */
+    public void testForEach(){
+        System.out.println("使用For each遍历");
+        for(Object obj:courseToSelect){
+            Course cr = (Course) obj;
+            System.out.println(cr.id+"."+cr.name);
+        }
+    }
+    /*
+    使用set方法修改list的数据
+     */
+    public void testModify(){
+        courseToSelect.set(2,new Course("2","大学英语"));
+    }
+    /*
+    使用list中的remove方法移除集合中的某个
+     */
+    public void testRemove(){
+        System.out.println("即将删除课程");
+        courseToSelect.remove(1);
+        Course cr= (Course) courseToSelect.get(1);
+        courseToSelect.remove(cr);
+    }
     public static void main(String[] args) {
         ListTest lt = new ListTest();
         lt.TestAdd();
         lt.testGet();
+        lt.testIterator();
+        lt.testModify();
+        lt.testRemove();
+        lt.testForEach();
+
     }
 }
