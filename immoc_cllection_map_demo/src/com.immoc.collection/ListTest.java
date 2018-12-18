@@ -1,6 +1,4 @@
 
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -45,9 +43,21 @@ public class ListTest {
         System.out.println("备选课程："+temp6.id+"."+temp6.name);
 
     }
+/*
+    显示当前备选课程list中的课程
 
+ */
+    public void  testGet(){
+        int size = courseToSelect.size();
+        System.out.println("当前备选课程有：");
+        for (int i = 0;i<size;i++){
+            Course cr   = (Course) courseToSelect.get(i);
+            System.out.println(""+cr.id+"."+cr.name);
+        }
+    }
     public static void main(String[] args) {
         ListTest lt = new ListTest();
         lt.TestAdd();
+        lt.testGet();
     }
 }
