@@ -1,3 +1,4 @@
+package com.immoc.collection;
 
 public class Course {
     public String id;
