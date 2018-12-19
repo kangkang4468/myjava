@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Myjava.iml" filepath="$PROJECT_DIR$/Myjava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/immoc_cllection_map_demo/immoc_cllection_map_demo.iml" filepath="$PROJECT_DIR$/immoc_cllection_map_demo/immoc_cllection_map_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/immoc_cllection_map_demo/src/immoc_cllection_map_demo.iml" filepath="$PROJECT_DIR$/immoc_cllection_map_demo/src/immoc_cllection_map_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myjava.iml" filepath="$PROJECT_DIR$/myjava.iml" />
     </modules>
   </component>
 </project>
