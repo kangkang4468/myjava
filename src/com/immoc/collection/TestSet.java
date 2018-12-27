@@ -10,8 +10,7 @@ public class TestSet {
 
     public void TestSet(){
         courseCourseSet = new ArrayList<>();
-        Course [] cr = new Course[]{"1","C语言"),();
-        courseCourseSet.add(cr);
+
 
     }
 }

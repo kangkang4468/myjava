@@ -1,5 +1,5 @@
 package com.immoc.collection;
-
+import java.util.Map;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +8,7 @@ public class TestGeneric {
     创建一个泛型的 Course属性的课程类courses
      */
     public List<Course> courses;
+    public Map<String,Student> students;
     /*
     重新构造方法，使用ArrayList方法初始化
      */
